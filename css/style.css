@@ -35,22 +35,51 @@ main{
     height: 80vh;
 }
 
+
 /*UTILITIES*/
 
 .title{
     font-size: 15px;
-    display: block;
 }
 
 .subtitle{
-    font-size: 10px;
+    font-size: 12px;
     color: dimgrey;
+    font-weight: 300;
 }
+
+.icons{
+    color: #a2a6aa;
+    font-size: 20px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+.icon{
+    font-size: 12px;
+    color: #a2a6aa;
+
+}
+
+.bell{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #9ee0ff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    
+}
+
 
 /*HEADER*/
 
-header{
-    background-color:#f2f2f2;
+.fix-tab{
+    background-color:#eee8e8;
     height: 60px;
     display: flex;
     position: fixed;
@@ -58,80 +87,87 @@ header{
 }
 
 .username{
-    width: 350px;
+    width: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .contact-name{
-    width: 879px;
+    width: 779px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
 
-
-.user img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-
-
-
-.icons{
+.user{
     display: flex;
     align-items: center;
-    color: #858e93;
-    width: 40px;
+}
 
+.user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
 }
 
 /*SECTION 1*/
 
 .sec-1{
-    width: 350px;
+    width: 450px;
     height: 100%;
     margin-top: 60px;
-    background-color: chocolate;
+}
 
+
+.notifications{
+    height: 65px;
+    background-color: #9ee0ff;
+}
+
+.input{
+    height: 35px;
+    background-color: #e4dcd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    height: 30px;
+    width: 20%;
+    border: #e4dcd4;
+    background-color:#eee8e8;
+}
+
+.type{
+    height: 30px;
+    width: 77%;
+    border: #e4dcd4;
+    background-color:#eee8e8;
+}
+
+.contact-list{
+    background-color: #fff;
 }
 
 
 /*SECTION 2*/
 
 .sec-2{
-    width: 879px;
+    width: 779px;
     margin-top: 60px;
     background-image: url(../img/mine.jpg);
     object-fit: cover;
-}
-
-.notifications{
-    height: 60px;
-    background-color: #3db4ec;
     display: flex;
-
 }
 
-.bell{
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    color: #3db4ec;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
 
+.foot{
+    align-self: flex-end;
+}
 
 
 

@@ -23,7 +23,7 @@
     <div id="app" class="container">
 
         <!--header-->
-        <header >
+        <header class="fix-tab" >
 
             <div class="username">
 
@@ -32,11 +32,11 @@
                     <span class="title" >Nome Utente</span>
                 </div>
 
-                <div class="icons">
+                <div>
                
-                        <i class="fa-solid fa-circle-notch"></i>
-                        <i class="fa-solid fa-message"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <a href=""><i class="icons fa-solid fa-circle-notch"></i></a>
+                        <a href=""><i class="icons fa-solid fa-message"></i></a>
+                        <a href=""><i class="icons fa-solid fa-ellipsis-vertical"></i></a>
                 
                 </div>
             </div>
@@ -44,43 +44,68 @@
             <div class="contact-name">
 
                 <div class="user">
+
                     <div>
                         <img src="./img/avatar_1.jpg" alt="">
                     </div>
-                   
-                    <span class="title" >Michele</span>
-                    <span class="subtitle" >Ultimo accesso oggi alle 10:35</span>
+
+                    <div class="box">
+                        <div class="title">Michele </div>
+                        <span class="subtitle" >Ultimo accesso oggi alle 10:35</span>
+                    </div>
                 </div>
 
-                <div class="icons">
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-paperclip"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-
+                <div>
+                    <a href=""><i class="icons fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="icons fa-solid fa-paperclip"></i></a>
+                    <a href=""><i class="icons fa-solid fa-ellipsis-vertical"></i></a>
                 </div>
 
             </div>
 
         </header>
 
+    <!--MAIN-->
+
         <main>
 
             <section class="sec-1" >
-                <div class="notifications">
+
+    <!--NOTIFICHE-->            
+
+                <div class="notifications user">
                     <div class="bell">
                        <i class=" fa-solid fa-bell-slash"></i>
-                    </div>   
-                       <span>Ricevi notifiche di messaggi</span>
-                       <span>Attiva notifiche desktop</span>
+                    </div>  
+
+                    <div class="box">
+                        <div class="title" >Ricevi notifiche di messaggi</div>
+                       <div class="subtitle"><a href="">Attiva notifiche desktop</a></div>
+                    </div>
 
                 </div>
+
+    <!--INPUT-->
                 <div class="input">
-                    miedibe
+                    <button class="btn" >
+                        <a href="">
+                        <i class="icon fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </button>
 
+                    <input type="text"
+                           class="type subtitle"
+                           placeholder="Cerca o inizia una nuova chat"
+                           >
                 </div>
+
+    <!--LISTA CONTATTI-->   
+
                 <div class="contact-list">
-                    miocwekb
+                    
+
+
+
 
                 </div>
 
@@ -90,7 +115,18 @@
             <section class="sec-2" >
 
 
+                <footer class="fix-tab foot ">
+                    <div class="icon3">
+                        <a href=""><i class="fa-solid fa-face-smile"></i></a>
+                    </div>
+                    <input type="text"
+                            class="type subtitle"
+                            >
+                    <div class="icon3">
+                        <a href=""><i class="fa-solid fa-microphone"></i></a>
+                    </div>        
 
+                </footer>
             </section>
 
 
