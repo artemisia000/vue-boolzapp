@@ -22,13 +22,14 @@
 
     <div id="app" class="container">
 
-        <!--header-->
+    <!--HEADER-->
+
         <header class="fix-tab" >
 
             <div class="username">
 
                 <div class="user">
-                    <img src="/img/avatar_io.jpg" alt="">
+                    <img src="./img/avatar_io.jpg" alt="">
                     <span class="title" >Nome Utente</span>
                 </div>
 
@@ -68,7 +69,7 @@
     <!--MAIN-->
 
         <main>
-
+    <!--SECTION 1-->
             <section class="sec-1" >
 
     <!--NOTIFICHE-->            
@@ -94,7 +95,7 @@
                     </button>
 
                     <input type="text"
-                           class="type subtitle"
+                           class="type1 subtitle"
                            placeholder="Cerca o inizia una nuova chat"
                            >
                 </div>
@@ -104,27 +105,39 @@
                 <div class="contact-list">
                     <ul>
                         <li class="contact user" v-for="contact in contacts " >
-                            <img :src="avatar" alt="">
+                            <img :src="contact.avatar" alt="">
                             <div :class="title">
-                                {{contacts.name}}
+                                {{contact.name}}
                             </div>
-
 
                         </li>
                     </ul>
-                    
-
-
-
-
                 </div>
-
 
             </section>
 
+    <!--SECTION 2-->
+
             <section class="sec-2" >
 
+                <div class="box-sms">
+                    <div class="sms sent title">
+                        <span class="sms1" >Inviato</span>
+                        <span class="time" >10/11/2021 15:50</span>
+                    </div>
+                    
+                </div>
 
+                <div class="box-sms">
+                    <div class="sms received title">
+                        <span class="sms1" >Ricevuto</span>
+                        <span class="time" >10/11/2021 15:50</span>
+                    </div>
+                   
+                </div>
+            
+
+            
                 <footer class="fix-tab foot ">
                     <div>
                         <a href=""><i class="icon3 fa-regular fa-face-smile"></i></a>
@@ -138,22 +151,12 @@
                     </div>        
 
                 </footer>
+
             </section>
-
-
-
 
         </main>
 
-
-
-
-
     </div>
-
-
-
-
 
     <script src="./js/main.js"></script>
 </body>

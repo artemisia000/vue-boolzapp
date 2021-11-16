@@ -123,6 +123,7 @@ main{
     width: 450px;
     height: 100%;
     margin-top: 60px;
+    background-color: #fff;
 }
 
 
@@ -133,7 +134,7 @@ main{
 
 .input{
     height: 35px;
-    background-color: #e4dcd4;
+    background-color: #eee8e8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,14 +144,24 @@ main{
     height: 30px;
     width: 20%;
     border: #e4dcd4;
-    background-color:#eee8e8;
+    background-color:whitesmoke;
 }
 
 .type{
+    height: 40px;
+    width: 77%;
+    border: #e4dcd4;
+    background-color: whitesmoke;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.type1{
     height: 30px;
     width: 77%;
     border: #e4dcd4;
-    background-color:#eee8e8;
+    background-color: whitesmoke;
+
 }
 
 .contact-list{
@@ -158,16 +169,55 @@ main{
     
 }
 
+.contact-list li{
+    height: 50px;
+    border-bottom: 1px solid #e4dcd4;
+}
+
 
 /*SECTION 2*/
 
 .sec-2{
     width: 779px;
+    height: 100%;
     margin-top: 60px;
+    border-left: 1px solid #e4dcd4;
     background-image: url(../img/mine.jpg);
     object-fit: cover;
     display: flex;
     overflow: auto;
+}
+
+
+.sms{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sms.received{
+    background-color:#a9dbd8 ;
+}
+
+.sms.sent{
+    background-color: ghostwhite;
+}
+
+.sms1{
+    align-self: center;
+    padding-left: 10px;
+}
+
+.time{
+    align-self: flex-end;
+    padding-right: 3px;
+    margin-bottom: 3px;
+    font-size: 8px;
+    color: #a2a6aa;
+
 }
 
 
