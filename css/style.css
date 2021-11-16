@@ -1,0 +1,37 @@
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Red Hat Mono', monospace;
+    font-family: 'Road Rage', cursive;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #32a093 0%,
+        #32a093 20%,
+        #dfe0d9 20%,
+        #dfe0d9 100%
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 80%;
+    min-width: 900px;
+    height: 95%;
+    background: #fff;
+}
