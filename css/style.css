@@ -5,12 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     font-family: 'Lato', sans-serif;
-    font-family: 'Libre Franklin', sans-serif;
-    font-family: 'Oxygen', sans-serif;
-    font-family: 'Red Hat Mono', monospace;
-    font-family: 'Road Rage', cursive;
 }
 
 body{
@@ -33,5 +28,110 @@ body{
     width: 80%;
     min-width: 900px;
     height: 95%;
-    background: #fff;
 }
+
+main{
+    display: flex;
+    height: 80vh;
+}
+
+/*UTILITIES*/
+
+.title{
+    font-size: 15px;
+    display: block;
+}
+
+.subtitle{
+    font-size: 10px;
+    color: dimgrey;
+}
+
+/*HEADER*/
+
+header{
+    background-color:#f2f2f2;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+
+.username{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-name{
+    width: 879px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    color: #858e93;
+    width: 40px;
+
+}
+
+/*SECTION 1*/
+
+.sec-1{
+    width: 350px;
+    height: 100%;
+    margin-top: 60px;
+    background-color: chocolate;
+
+}
+
+
+/*SECTION 2*/
+
+.sec-2{
+    width: 879px;
+    margin-top: 60px;
+    background-image: url(../img/mine.jpg);
+    object-fit: cover;
+}
+
+.notifications{
+    height: 60px;
+    background-color: #3db4ec;
+    display: flex;
+
+}
+
+.bell{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #3db4ec;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
