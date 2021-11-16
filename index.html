@@ -102,6 +102,16 @@
     <!--LISTA CONTATTI-->   
 
                 <div class="contact-list">
+                    <ul>
+                        <li class="contact user" v-for="contact in contacts " >
+                            <img :src="avatar" alt="">
+                            <div :class="title">
+                                {{contacts.name}}
+                            </div>
+
+
+                        </li>
+                    </ul>
                     
 
 

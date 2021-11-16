@@ -6,7 +6,7 @@ const app = new Vue ({
         contacts: [
             {
                 name: 'Michele',
-                avatar: '_1',
+                avatar: 'img/avatar_1.jpg',
                 visible: true,
                 messages: [
                     {
@@ -86,6 +86,7 @@ const app = new Vue ({
                     }
                 ],
             },
-        ]
+        ],
+    
     }
 }) ;      
