@@ -156,7 +156,8 @@
                         <a href=""><i class="icon3 fa-regular fa-face-smile"></i></a>
                     </div>
                     <input type="text"
-                           v-model="user.textMy"
+                           v-model.trim="nuovoSms"
+                           @keyup.enter="addSms"
                            class="type subtitle"
                            placeholder="Scrivi un messaggio"
                             >

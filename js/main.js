@@ -103,9 +103,26 @@ const app = new Vue ({
             console.log(`mostra:${contactIndex}`);
 
             this.activeContact = contactIndex;
+        },
 
-        }
+        addSms (){
+            if(this.nuovoSms !== '')
+            
+                this.user.push({
+                    textMy: this.nuovoSms,
+                    completed: false, 
+            });
+
+            this.nuovoSms = '';
+
+        },
+
+
+
+
+
 
     }
+});
 
-}) ;      
+ 
