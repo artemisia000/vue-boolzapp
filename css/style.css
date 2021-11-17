@@ -209,14 +209,12 @@ main{
 }
 
 .sms.received{
-
     background-color:#a9dbd8 ;
 
 }
 
 .sms.sent{
     background-color: ghostwhite;
-
 }
 
 .sms1{
@@ -233,10 +231,16 @@ main{
 
 }
 
+.desk{
+    width: 779px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .foot{
-    align-self: flex-end;
     width: 779px;
+    align-self: flex-end;
     align-items: center;
     justify-content: space-around;
 

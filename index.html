@@ -123,26 +123,32 @@
     <!--SECTION 2-->
 
             <section class="sec-2" >
-
-                <div class="box-sms" 
-                     v-for= "(contact,index) in contacts"
-                     :class="{active: index === activeContact}"
-                >
-                    <div class="sms sent title">
-                        <span class="sms1" >{{contacts[activeContact].text}}</span>
-                        <span class="time" >{{contacts[activeContact].date}}</span>
-                    </div>
-                    
-                </div>
-
-                <div class="box-sms">
-                    <div class="sms received title">
-                        <span class="sms1" >Ricevuto</span>
-                        <span class="time" >10/11/2021 15:50</span>
-                    </div>
-                   
-                </div>
+              <div class="desk">
+                  <div class="box-sms" 
+                       v-for="message in contacts[activeContact].messages"
+                       >
             
+                     <div class="sms  title"
+                        :class="message.status"
+                         >
+                        <span class="sms1" >{{message.text}}</span>
+                        <span class="time" >{{message.date}}</span>
+                      </div>
+                 </div>
+
+
+                 <div class="box-sms"
+                     v-for="user.textMy"
+                 >
+                     <span class="sms1" >{{user.textMy}}</span>
+                 <div class="sms  title">
+ 
+                </div>
+                    
+            </div>     
+                
+         </div>
+       
     <!--FOOTER-->
             
                 <footer class="fix-tab foot ">
@@ -150,8 +156,9 @@
                         <a href=""><i class="icon3 fa-regular fa-face-smile"></i></a>
                     </div>
                     <input type="text"
-                            class="type subtitle"
-                            placeholder="Scrivi un messaggio"
+                           v-model="user.textMy"
+                           class="type subtitle"
+                           placeholder="Scrivi un messaggio"
                             >
                     <div>
                         <a href=""><i class="icon3 fa-solid fa-microphone"></i></a>
