@@ -29,8 +29,9 @@
             <div class="username">
 
                 <div class="user">
-                    <img src="./img/avatar_io.jpg" alt="">
-                    <span class="title" >Nome Utente</span>
+                    <img  :src="`./img/avatar${user.avatar}.jpg`"     
+                          :alt="user.name">
+                    <span class="title" >{{user.name}}</span>
                 </div>
 
                 <div>
@@ -74,7 +75,7 @@
 
     <!--NOTIFICHE-->            
 
-                <div class="notifications user">
+                <div class="notifications">
                     <div class="bell">
                        <i class=" fa-solid fa-bell-slash"></i>
                     </div>  
@@ -104,7 +105,10 @@
 
                 <div class="contact-list">
                     <ul>
-                        <li class="contact user" v-for="contact in contacts " >
+                        <li class="contact user" 
+                            v-for="(contact, index) in contacts "
+                            :class="{active: index === activeContact}"
+                            @click="setContact(index)" >
                             <img :src="contact.avatar" alt="">
                             <div :class="title">
                                 {{contact.name}}
@@ -120,10 +124,13 @@
 
             <section class="sec-2" >
 
-                <div class="box-sms">
+                <div class="box-sms" 
+                     v-for= "(contact,index) in contacts"
+                     :class="{active: index === activeContact}"
+                >
                     <div class="sms sent title">
-                        <span class="sms1" >Inviato</span>
-                        <span class="time" >10/11/2021 15:50</span>
+                        <span class="sms1" >{{contacts[activeContact].text}}</span>
+                        <span class="time" >{{contacts[activeContact].date}}</span>
                     </div>
                     
                 </div>
@@ -136,7 +143,7 @@
                    
                 </div>
             
-
+    <!--FOOTER-->
             
                 <footer class="fix-tab foot ">
                     <div>

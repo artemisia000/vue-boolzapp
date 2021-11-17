@@ -3,7 +3,13 @@
 const app = new Vue ({
     el: '#app',
     data: {
+        user: {
+            name: 'Misia',
+            avatar: '_io',
+
+        },
         contacts: [
+            
             {
                 name: 'Michele',
                 avatar: 'img/avatar_1.jpg',
@@ -87,6 +93,18 @@ const app = new Vue ({
                 ],
             },
         ],
-    
+         activeContact: 0,
+    },
+
+    methods: {
+
+        setContact(contactIndex){
+            console.log(`mostra:${contactIndex}`);
+
+            this.activeContact = contactIndex;
+
+        }
+
     }
+
 }) ;      
